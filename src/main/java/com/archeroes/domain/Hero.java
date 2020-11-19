@@ -58,5 +58,5 @@ public class Hero {
 	
 	private String universe;
 	
-	private Integer contentStatus;
+	private Integer contentStatus = 1;
 }
