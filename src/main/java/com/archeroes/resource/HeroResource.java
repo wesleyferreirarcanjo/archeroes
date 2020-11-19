@@ -7,6 +7,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -38,6 +39,12 @@ public class HeroResource {
 	public ResponseEntity<List<Hero>> search(@SearchSpec Specification<Hero> specs) {
 		List<Hero> list = this.service.search(specs);
 		return ResponseEntity.ok().body(list);
+	}
+	
+	@PostMapping
+	public ResponseEntity<Void> insert() {
+		
+		return null;
 	}
 	
 

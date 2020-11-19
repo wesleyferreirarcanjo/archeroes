@@ -59,4 +59,8 @@ public class Hero {
 	private String universe;
 	
 	private Integer contentStatus = 1;
+	
+	@Lob
+	@Column
+	private String extraJSON;
 }
