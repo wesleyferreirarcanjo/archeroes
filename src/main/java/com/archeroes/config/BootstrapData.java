@@ -15,6 +15,8 @@ public class BootstrapData {
 	@Bean
 	public void test() {
 		webCrawler.getHeroesDCLinkWikiFandom();
+		
+		webCrawler.getHeroDCContentWikiFandom();
 	}
 	
 }
