@@ -24,7 +24,7 @@ import com.sipios.springsearch.anotation.SearchSpec;
 
 
 @RestController
-@RequestMapping("/hero")
+@RequestMapping("/admin/hero")
 public class HeroResource {
 
 	@Autowired
