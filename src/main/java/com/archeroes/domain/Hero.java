@@ -57,4 +57,6 @@ public class Hero {
 	private String hair;
 	
 	private String universe;
+	
+	private Integer contentStatus;
 }
