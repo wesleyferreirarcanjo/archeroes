@@ -13,10 +13,12 @@ public class BootstrapData {
 	private WebCrawler webCrawler;
 	
 	@Bean
-	public void test() {
+	public void bootstrap() {
+
 		webCrawler.getHeroesDCLinkWikiFandom();
 		
 		webCrawler.getHeroDCContentWikiFandom();
+
 	}
 	
 }

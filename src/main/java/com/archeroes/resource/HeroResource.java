@@ -48,7 +48,7 @@ public class HeroResource {
     }
 
     @Operation(summary = "Encontra Heroi fazendo pesquisa", description = "/admin/hero/search=(param:value)", tags = {"hero"},
-            parameters = {@Parameter(in = ParameterIn.PATH, name = "Query", description = "Query para pesquisar heroi", example = "igual(:), diferente(!), field:value")})
+            parameters = {@Parameter(in = ParameterIn.QUERY, name = "search", description = "Query para pesquisar heroi", example = "igual(:), diferente(!), field:value")})
     @GetMapping
     public ResponseEntity<List<Hero>> search(@Parameter(hidden = true) @SearchSpec Specification<Hero> specs) {
         List<Hero> list = this.service.search(specs);
